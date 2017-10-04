@@ -22,6 +22,6 @@ Second page includes car details like an overview image, description, manufactur
 
 Database is pre-seeded just you can run the following commands:
 
->  rake db:migrate
->  rake db:seed
->  rails server
+- rake db:migrate
+- rake db:seed
+- rails server
