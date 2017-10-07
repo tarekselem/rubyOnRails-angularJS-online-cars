@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  previewImageUrl: MyString
+  description: MyString
+  manufacturer: MyString
+  model: MyString
+  engineSize: 9.99
+  speed: 9.99
+  acceleration: 1
+
+two:
+  previewImageUrl: MyString
+  description: MyString
+  manufacturer: MyString
+  model: MyString
+  engineSize: 9.99
+  speed: 9.99
+  acceleration: 1
