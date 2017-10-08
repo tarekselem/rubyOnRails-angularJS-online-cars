@@ -1,0 +1,36 @@
+<div class="row">
+    <h1 class="page-header">{{car.model}}
+        <small>{{car.manufacturer}}</small>
+    </h1>
+</div>
+
+<div class="row">
+    <div class="form-group">
+        <img class="img-rounded img-responsive img-center"
+             ng-src="{{car.previewImageUrl || 'http://placehold.it/200x200'}}" alt="">
+    </div>
+    <div class="form-group container thumb" >
+        <div class="col-xs-3" ng-repeat="img in car.car_images">
+            <img width="350" height="200" class="thumbnail img-responsive"  ng-src="{{img.imageUrl}}" alt="">
+        </div>
+    </div>
+    <div class="form-group col-lg-12">
+        <h4>Engine Size:
+            <small>{{car.engineSize || currency}}</small>
+        </h4>
+        <h4>Speed:
+            <small>{{car.speed || currency}}</small>
+        </h4>
+        <div class="progress" style=" width: 25%;">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{car.acceleration}}"
+                 aria-valuemin="0" aria-valuemax="100" ng-style="{'width':car.acceleration+'%'}">
+                {{"Acceleration "+ car.acceleration +" %"}}
+            </div>
+        </div>
+    </div>
+    <div class="form-group col-lg-12">
+        <p class="text-center">{{car.description}}</p>
+    </div>
+</div>
+
+</div>
